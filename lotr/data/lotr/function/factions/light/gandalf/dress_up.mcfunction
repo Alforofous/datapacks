@@ -3,7 +3,8 @@ item replace entity @s armor.chest with leather_chestplate[dyed_color={rgb:96057
 item replace entity @s armor.legs with leather_leggings[dyed_color={rgb:9605778, show_in_tooltip:false}]
 item replace entity @s armor.feet with leather_boots[dyed_color={rgb:9605778, show_in_tooltip:false}]
 
-item replace entity @s weapon.offhand with minecraft:breeze_rod[minecraft:custom_name='{"text":"Light Staff","color":"white","bold": true}']
+item replace entity @s weapon.offhand with minecraft:breeze_rod[minecraft:custom_name='{"text":"Light Staff","color":"white","bold": true}',minecraft:custom_data={item_id:"light_staff"}]
 item modify entity @s weapon.offhand lotr:enable_right_click
-item replace entity @s weapon.mainhand with minecraft:wooden_sword[minecraft:custom_name='{"text":"Elven Sword","color":"#68d9ca","bold": true}']
-item modify entity @s weapon.mainhand lotr:enable_right_click
+item modify entity @s weapon.offhand lotr:default_usable_item
+item replace entity @s weapon.mainhand with minecraft:wooden_sword[minecraft:custom_name='{"text":"Elven Sword","color":"#68d9ca","bold": true}',minecraft:custom_data={item_id:"elven_sword"}]
+item modify entity @s weapon.mainhand lotr:default_usable_item

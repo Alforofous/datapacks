@@ -1,11 +1,19 @@
-{
-  "function": "minecraft:set_components",
-  "components": {
-    "minecraft:food": {
-      "nutrition": 0,
-      "saturation": 0,
-      "can_always_eat": true,
-      "eat_seconds": 1000001
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true,
+        "eat_seconds": 1000001
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "right_click_enabled": true
     }
   }
-}
+]
